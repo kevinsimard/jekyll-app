@@ -1,0 +1,12 @@
+---
+layout:
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>{% assign url="http://domain.tld" %}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml">{% assign  posts=site.posts|where:"lang","en" %}{% for post in posts %}
+    <url>
+        <loc>{{ url }}{{ post.url }}</loc>{% assign versions=site.posts|where:"name",post.name %}{% for version in versions %}
+        <xhtml:link rel="alternate" hreflang="{{ version.lang }}" href="{{ url }}{{ version.url }}"/>{% endfor %}
+    </url>{% endfor %}
+</urlset>

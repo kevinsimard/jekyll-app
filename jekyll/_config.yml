@@ -1,0 +1,26 @@
+# set the destination directory
+destination: "../dist/"
+
+# set a default permalink for posts
+permalink: /:categories/:title/
+
+defaults:
+    # set the default page title & description
+    - { scope: { path: "" }, values: {
+        page_title: "Default Title",
+        page_description: "Default Description"
+    } }
+
+    # set the 'layout' property for posts
+    - { scope: { path: "_posts" }, values: { layout: "default" } }
+
+    # set the 'lang' property for posts
+    - { scope: { path: "_posts" }, values: { lang: "en" } }
+    - { scope: { path: "_posts/fr" }, values: { lang: "fr" } }
+
+    ## index
+    - { scope: { path: "_posts/fr" }, values: { categories: "fr" } }
+    - { scope: { path: "_posts/en" }, values: { categories: "en" } }
+    ## contact
+    - { scope: { path: "_posts/en/contact" }, values: { categories: "en contact" } }
+    - { scope: { path: "_posts/fr/contact" }, values: { categories: "fr contact" } }
