@@ -1,6 +1,11 @@
 # Jekyll Multilingual Application Structure
 
+## Usage
+
+[https://jekyllrb.com/docs/home/](https://jekyllrb.com/docs/home/)
+
 ## Code Structure
+
     ├── jekyll
     │   ├── _data
     │   │   └── .gitkeep
@@ -25,6 +30,12 @@
     │   ├── _config.yml
     │   ├── favicon.ico
     │   └── sitemap.xml
+    ├── .editorconfig
     ├── .gitattributes
     ├── .gitignore
+    ├── LICENSE.txt
     └── README.md
+
+## License
+
+This package is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
