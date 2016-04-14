@@ -33,7 +33,6 @@
     ├── .editorconfig
     ├── .gitattributes
     ├── .gitignore
-    ├── LICENSE.txt
     └── README.md
 
 ## License
