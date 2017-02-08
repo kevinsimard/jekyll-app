@@ -15,20 +15,17 @@
     │   │       │   └── index.html
     │   │       └── index.html
     │   ├── _layouts
-    │   │   ├── default.html
-    │   │   └── master.html
-    │   ├── _posts
-    │   │   ├── en
-    │   │   │   └── contact
-    │   │   │       └── 1970-01-01-.html
-    │   │   ├── fr
-    │   │   │   ├── contact
-    │   │   │   │   └── 1970-01-01-.html
-    │   │   │   └── 1970-01-01-.html
-    │   │   └── 1970-01-01-.html
-    │   ├── .gitignore
+    │   │   └── default.html
+    │   ├── en
+    │   │   └── contact
+    │   │       └── index.html
+    │   ├── fr
+    │   │   ├── contact
+    │   │   │   └── index.html
+    │   │   └── index.html
     │   ├── _config.yml
     │   ├── favicon.ico
+    │   ├── index.html
     │   └── sitemap.xml
     ├── .editorconfig
     ├── .gitattributes

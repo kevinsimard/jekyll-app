@@ -1,4 +1,17 @@
----
-layout: master
----
-{{ content }}
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <title>{{ page.title }}</title>
+        <meta name="description" content="{{ page.description }}">
+        {% assign alternates = site.pages | where: "uname", page.uname %}{% for alternate in alternates %}
+        <link rel="alternate" hreflang="{{ alternate.lang }}" href="{{ site.url }}{{ alternate.url }}"/>{% endfor %}
+    </head>
+    <body>
+        {{ content }}
+    </body>
+</html>
